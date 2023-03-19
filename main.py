@@ -11,8 +11,12 @@ myclient = pymongo.MongoClient("mongodb://localhost:27017/")
 mydb = myclient["ai_project"]
 mycol = mydb["trendyol"]
 
-product_urls = ["erkek-gomlek-x-g2-c75", "erkek-t-shirt-x-g2-c73"]
-categories = ["gomlek", "tisort"]
+product_urls = ["erkek-gomlek-x-g2-c75","kadin-gomlek-x-g1-c75", "erkek-t-shirt-x-g2-c73", "kadin-t-shirt-x-g1-c73", "erkek-pantolon-x-g2-c70", "kadin-pantolon-x-g1-c70", "erkek-ceket-x-g2-c1030", "kadin-ceket-x-g1-c1030",
+				"erkek-mont-x-g2-c118", "kadin-mont-x-g1-c118", "erkek-sort-x-g2-c119", "erkek-saat-x-g2-c34", "kadin-saat-x-g1-c34",  "erkek-gunes-gozlugu-x-g2-c105", "erkek-cuzdan-x-g2-c1032", "kadin-cuzdan-x-g1-c1032",
+				"erkek-kemer-x-g2-c1093", "erkek-sapka-x-g2-c1181",  "kadin-sapka-x-g1-c1181", "erkek-boxer-x-g2-c61", "erkek-corap-x-g2-c1038", "kadin-corap-x-g1-c1038",
+				"elbise-x-c56", "etek-x-c69", "kadin-spor-tayt-x-g1-c101460",
+				"laptop-x-c103108", "cep-telefonu-x-c103498", "televizyon-x-c104156" ]
+categories = ["gomlek", "gomlek", "tisort", "tisort", "pantolon", "pantolon", "ceket","ceket", "mont","mont","sort", "saat", "saat", "gozluk", "cuzdan","cuzdan", "kemer", "sapka", "sapka", "boxer", "corap","corap", "elbise", "etek", "tayt", "laptop", "cep telefonu", "televizyon"]
 
 
 for urls in product_urls:
